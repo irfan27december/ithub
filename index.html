@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT Hub Canberra</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
+  <!-- Font Awesome CDN for sliders -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>IT Hub Canberra</h1>
+    <p>Effective Business Performance. Your Trusted Partner in IT Services.</p>
+  </header>
+  <nav>
+    <a href="index.html"><i class="fas fa-home icon-primary"></i> HOME</a>
+    <a href="about.html"><i class="fas fa-info-circle icon-primary"></i> ABOUT</a>
+    <a href="trading.html"><i class="fas fa-briefcase icon-primary"></i> TRADING NAME</a>
+    <a href="services.html"><i class="fas fa-server icon-primary"></i> SERVICES</a>
+    <a href="calibration.html"><i class="fas fa-tools icon-primary"></i> CALIBRATION</a>
+    <a href="education.html"><i class="fas fa-graduation-cap icon-primary"></i> EDUCATION</a>
+    <a href="clients.html"><i class="fas fa-users icon-primary"></i> CLIENTS</a>
+    <a href="contacts.html"><i class="fas fa-envelope icon-primary"></i> CONTACTS</a>
+  </nav>
+  <div id="breadcrumb" class="breadcrumb"></div>
+
+<main class="main-container">
+
+  <!-- Welcome Section -->
+  <section class="section welcome-section">
+    <h2 class="section-heading"><i class="fas fa-globe icon-accent icon-primary" style="margin-right: 8px;"></i> Welcome to IT HUB Canberra</h2>
+	<!--You can replace fa-building with another icon such as: fa-building for a corporate look, fa-laptop-code (for tech), globe (for global presence), fa-users (for community focus) -->
+    <p>Explore our wide range of professional IT services tailored to meet your business and educational needs.</p>
+    <p>Established in 2016, our goals include:</p>
+    <ul class="goals-list">
+      <li><i class="fas fa-chart-line icon-primary"></i> Expanding IT services across Australia and globally.</li>
+      <li><i class="fas fa-graduation-cap icon-primary"></i> Hands-on lab training and professional certifications.</li>
+      <li><i class="fas fa-cogs icon-primary"></i> Systems, networking & SME consultation.</li>
+      <li><i class="fas fa-code icon-primary"></i> Full-stack web development.</li>
+      <li><i class="fas fa-server icon-primary"></i> IT infrastructure monitoring & support.</li>
+      <li><i class="fas fa-users icon-primary"></i> Community-focused job training programs.</li>
+      <li><i class="fas fa-briefcase icon-primary"></i> Job-guaranteed programs (with conditions).</li>
+    </ul>
+    <!-- <a class="read-more-btn" href="about.html">READ MORE...</a> -->
+	<a class="read-more-btn" href="about.html">READ MORE <i class="fas fa-arrow-right" style="margin-right: 6px;"></i></a>
+
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section">
+    <!-- <h2 class="section-heading"><i class="fas fa-concierge-bell icon-accent"></i> Our Services</h2> -->
+	<h2 class="section-heading"><a href="services.html" style="text-decoration: none; color: inherit;"><i class="fas fa-concierge-bell icon-primary"></i> Our Services</a></h2>
+	
+    <div class="services-grid">
+      <a href="network_services.html" class="service-card"><i class="fas fa-network-wired  icon-primary"></i><span> Network Services</span></a>
+      <a href="system_solutions.html" class="service-card"><i class="fas fa-desktop icon-primary"></i><span> System Solutions</span></a>
+      <a href="training.html" class="service-card"><i class="fas fa-chalkboard-teacher icon-primary"></i><span> Training</span></a>
+      <a href="design_consultancy.html" class="service-card"><i class="fas fa-pencil-ruler icon-primary"></i><span> Design & Consultancy</span></a>
+      <a href="online_training.html" class="service-card"><i class="fas fa-laptop icon-primary"></i><span> Online Training</span></a>
+      <a href="business_solutions.html" class="service-card"><i class="fas fa-briefcase icon-primary"></i><span> Business Solutions</span></a>
+      <a href="education_services.html" class="service-card"><i class="fas fa-user-graduate icon-primary"></i><span> Education Services</span></a>
+      <a href="calibration_services.html" class="service-card"><i class="fas fa-tools icon-primary"></i><span> Calibration – IT Tools</span></a>
+      <a href="it_auditing.html" class="service-card"><i class="fas fa-clipboard-check icon-primary"></i><span> IT Auditing</span></a>
+    </div>
+  </section>
+
+  <!-- Slider Section -->
+  <section class="section slider-wrapper">
+    <h2 class="section-heading"><i class="fas fa-sliders-h icon-accent icon-primary"></i> Featured Technologies</h2>
+    <div class="slider-container">
+      <div class="slide active"><i class="fas fa-network-wired icon-primary"></i><h3>Network Services</h3></div>
+      <div class="slide"><i class="fas fa-laptop-code icon-primary"></i><h3>System Solutions</h3></div>
+      <div class="slide"><i class="fas fa-envelope icon-primary"></i><h3>Microsoft Exchange</h3></div>
+      <div class="slide"><i class="fas fa-database icon-primary"></i><h3>CISCO / JUNIPER</h3></div>
+      <div class="slide"><i class="fas fa-certificate icon-primary"></i><h3>Vendor Certifications</h3></div>
+      <div class="slide"><i class="fas fa-comments icon-primary"></i><h3>Skype for Business</h3></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+      <span class="dot" onclick="showSlide(3)"></span>
+      <span class="dot" onclick="showSlide(4)"></span>
+      <span class="dot" onclick="showSlide(5)"></span>
+    </div>
+  </section>
+
+</main>
+
+  <!-- Load the footer -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Error loading footer:", error);
+      });
+  </script>
+    
+  <script src="script.js"></script>
+  
+  
+  
+  <script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+
+  function showSlide(n) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      dots[i].classList.remove("active");
+    });
+    slides[n].classList.add("active");
+    dots[n].classList.add("active");
+    slideIndex = n;
+  }
+
+  function autoSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+    setTimeout(autoSlide, 5000);
+  }
+
+  showSlide(slideIndex);
+  setTimeout(autoSlide, 5000);
+</script>
+
+  
+</body>
+</html>

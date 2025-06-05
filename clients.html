@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clients - IT Hub Canberra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>IT Hub Canberra</h1>
+    <p>Effective Business Performance. Your Trusted Partner in IT Services.</p>
+  </header>
+  <nav>
+    <a href="index.html"><i class="fas fa-home icon-primary"></i> HOME</a>
+    <a href="about.html"><i class="fas fa-info-circle icon-primary"></i> ABOUT</a>
+    <a href="trading.html"><i class="fas fa-briefcase icon-primary"></i> TRADING NAME</a>
+    <a href="services.html"><i class="fas fa-server icon-primary"></i> SERVICES</a>
+    <a href="calibration.html"><i class="fas fa-tools icon-primary"></i> CALIBRATION</a>
+    <a href="education.html"><i class="fas fa-graduation-cap icon-primary"></i> EDUCATION</a>
+    <a href="clients.html"><i class="fas fa-users icon-primary"></i> CLIENTS</a>
+    <a href="contacts.html"><i class="fas fa-envelope icon-primary"></i> CONTACTS</a>
+  </nav>
+  <!-- <div class="breadcrumb">Home > Clients</div>  -->
+<div id="breadcrumb" class="breadcrumb"></div>
+
+  <main>
+    <h2 class="section-heading"><i class="fas fa-users"></i> Clients</h2>
+    <h3><p>Within a short period of service in the industry, we managed to deliver our services to clients such as:</h3></p>
+	<!-- Clients Section -->
+<section class="clients-section">
+  <div class="client-card">
+    <i class="fas fa-shield-alt icon-primary"></i>
+    <h4>NSW Police Department</h4>
+    <p>Subcontracted via IT partner</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-plane icon-primary"></i>
+    <h4>Qantas Airways</h4>
+    <p>Subcontracted by Fujitsu Australia</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-school icon-primary"></i>
+    <h4>NSW Department of Education and Communities - NSW</h4>
+    <p>Subcontracted by an Agent</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-building icon-primary"></i>
+    <h4>IPD Australia Pty Ltd.</h4>
+    <p>Direct IT Services</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-briefcase icon-primary"></i>
+    <h4>IBM</h4>
+    <p>Subcontracted</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-globe icon-primary"></i>
+    <h4>Department of Foreign Affairs -  Canberra</h4>
+    <p>Subcontracted</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-city icon-primary"></i>
+    <h4>Department of Human Services - Canberra</h4>
+    <p>Subcontracted by Dimension Data</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-university icon-primary"></i>
+    <h4>Australian Taxation Office - Canberra</h4>
+    <p>Subcontracted by Microsoft</p>
+  </div>
+  <div class="client-card">
+    <i class="fas fa-user-md icon-primary"></i>
+    <h4>NSW.....</h4>
+    <p>Project Services...</p>
+  </div>
+</section>
+
+  </main>
+  
+  <!--
+  <footer>
+    <p><i class="fas fa-map-marker-alt"></i> Address: Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000, Australia. 
+       <a href="https://maps.google.com/?q=Level+10-11,+No.+66,+Clarence+Street,+Sydney,+NSW+2000" target="_blank">View on Map</a></p>
+    <p><i class="fas fa-phone"></i> Phones: (061) 0292480113</p>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@cislab.com.au">info@cislab.com.au</a></p>
+    <p>&copy; 2025 IT Hub Canberra. All rights reserved.</p>
+  </footer>
+  -->
+  <!-- Load the footer -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Error loading footer:", error);
+      });
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>

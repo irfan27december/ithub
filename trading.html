@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trading - IT Hub Canberra</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script> 
+</head>
+<body>
+  <header>
+    <h1>IT Hub Canberra</h1>
+    <p>Effective Business Performance. Your Trusted Partner in IT Services.</p>
+  </header>
+  <nav>
+    <a href="index.html"><i class="fas fa-home icon-primary"></i> HOME</a>
+    <a href="about.html"><i class="fas fa-info-circle icon-primary"></i> ABOUT</a>
+    <a href="trading.html"><i class="fas fa-briefcase icon-primary"></i> TRADING NAME</a>
+    <a href="services.html"><i class="fas fa-server icon-primary"></i> SERVICES</a>
+    <a href="calibration.html"><i class="fas fa-tools icon-primary"></i> CALIBRATION</a>
+    <a href="education.html"><i class="fas fa-graduation-cap icon-primary"></i> EDUCATION</a>
+    <a href="clients.html"><i class="fas fa-users icon-primary"></i> CLIENTS</a>
+    <a href="contacts.html"><i class="fas fa-envelope icon-primary"></i> CONTACTS</a>
+  </nav>
+
+  <div id="breadcrumb" class="breadcrumb"></div>
+
+  <main>
+    <h2 class="section-heading"><i class="fas fa-briefcase icon-primary"></i>Trading</h2>
+	<div class="card-container">
+      <div class="card">
+        <h3 class="section-heading"><i class="fas fa-network-wired icon-primary"></i> IT HUB Australia Pty Ltd</h3>
+        <ul class="goals-list">
+          <li><i class="fas fa-cogs icon-primary"></i> Established in August 2006, it focuses on IT education, training, systems consulting, networking, integration, and web application development. Trading as IT Hub Australia Pty Ltd.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="section-heading"><i class="fas fa-laptop-code icon-primary"></i> CISLAB</h3>
+        <ul class="goals-list">
+          <li><i class="fas fa-certificate icon-primary"></i> The trading name was established in 2007 for the purpose of Training Microsoft, Cisco, and other vendor products for certifications.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="section-heading"><i class="fas fa-city icon-primary"></i> IT HUB CANBERRA</h3>
+        <ul class="goals-list">
+          <li><i class="fas fa-user-tie icon-primary"></i> Established in Sept. 2015, with focus on Canberra-based clients.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="section-heading"><i class="fas fa-server icon-primary"></i> MICROSOFT LAB & RESOURCE PORTAL</h3>
+        <ul class="goals-list">
+          <li><i class="fas fa-flask icon-primary"></i> Established in 2007, the resource portal is under development. All Microsoft-related product information and lab work can be carried out in this portal once it is operational.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="section-heading"><i class="fas fa-handshake icon-primary"></i> BILLION EXCHANGE, YOUR BUSINESS PARTNER</h3>
+        <ul class="goals-list">
+          <li><i class="fas fa-globe icon-primary"></i> Newly established entity in March 2017. MoU signed with foreign/external parties in relation to Invest in Australian Exports, Residential & Commercial Real Estate, and Rural Farm Land, etc.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="section-heading"><i class="fas fa-lightbulb icon-primary"></i> PLACEHOLDER FOR ANOTHER CARD...</h3>
+        <ul class="goals-list">
+          <li><i class="fas fa-info-circle icon-primary"></i> Content goes here...</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Error loading footer:", error);
+      });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
